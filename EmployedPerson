@@ -1,0 +1,40 @@
+
+//subclass
+public class EmployedPerson extends SeniorPerson {
+
+    String empID, dept, position,  salary, rate;
+
+    EmployedPerson(String fullName, String Address, String Gender, int Age, String contactNum, String empID,
+                   String dept, String position, String salary, String rate){
+        super(fullName,Address,Gender,Age,contactNum);
+        this.empID=empID;
+        this.dept=dept;
+        this.position=position;
+        this.salary=salary;
+        this.rate=rate;
+    }
+
+    void IsWorking(){
+
+        System.out.println("ID: "+ empID);
+        System.out.println("Department: "+ dept);
+        System.out.println("Position: "+position);
+        System.out.println("Salary: "+salary);
+        System.out.println("Rate: "+ rate);
+        System.out.println(fullName+ " is working.");
+    }
+
+    void IsResting(){
+        System.out.println("ID: "+ empID);
+        System.out.println("Department: "+ dept);
+        System.out.println("Position: "+position);
+        System.out.println("Salary: "+salary);
+        System.out.println("Rate: "+ rate);
+        System.out.println(fullName+ " is resting.");
+    }
+
+    void CanDo(){
+        System.out.println("The Employed Person can now buy his own groceries.");
+    }
+
+}
