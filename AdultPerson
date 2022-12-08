@@ -1,0 +1,33 @@
+
+//super class
+public class AdultPerson {
+
+    String fullName, Address, Gender, contactNum;
+    int Age;
+
+    //constructor
+    AdultPerson(String fullName, String Address, String Gender, int Age, String contactNum){
+
+        this.fullName=fullName;
+        this.Address=Address;
+        this.Gender=Gender;
+        this.Age=Age;
+        this.contactNum=contactNum;
+    }
+
+    //method
+    void Info(){
+        System.out.println("Full name: "+ fullName);
+        System.out.println("Address: "+ Address);
+        System.out.println("Age: "+ Age);
+        System.out.println("Gender: "+ Gender);
+        System.out.println("Contact Number: "+ contactNum);
+
+
+    }
+
+    void CanDo(){
+        System.out.println("The Adult Person is now allowed to be in a relationship and look for a job");
+    }
+
+}
