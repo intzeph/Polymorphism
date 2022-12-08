@@ -1,0 +1,39 @@
+
+//subclass
+public class Toddler extends AdultPerson {
+
+    String gradeLevel,studentId;
+
+    Toddler(String fullName, String Address, String Gender, int Age, String contactNum, String gradeLevel, String studentId){
+        super(fullName, Address, Gender, Age, contactNum);
+        this.gradeLevel=gradeLevel;
+        this.studentId=studentId;
+
+    }
+
+    void IsOntheSchool(){
+        System.out.println("Student ID: "+ studentId);
+        System.out.println("Grade Level: "+gradeLevel);
+        System.out.println(fullName+ " is on the school.");
+
+    }
+
+    void MakingAssign(){
+
+        System.out.println("Student ID: "+ studentId);
+        System.out.println("Grade Level: "+gradeLevel);
+        System.out.println(fullName+ " is doing his/her assignment.");
+    }
+
+    void IsAtHome(){
+
+        System.out.println("Student ID: "+ studentId);
+        System.out.println("Grade Level: "+gradeLevel);
+        System.out.println(fullName+ " is at home.");
+
+    }
+
+    void CanDo(){
+        System.out.println("The Toddler can play and kiss mom and dad.");
+    }
+}
