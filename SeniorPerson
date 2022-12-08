@@ -1,0 +1,27 @@
+
+//subclass
+public class SeniorPerson extends AdultPerson {
+    boolean isSenior;
+
+    //constructor
+    SeniorPerson(String fullName, String Address, String Gender, int Age, String contactNum){
+
+        super(fullName,Address,Gender,Age,contactNum);
+
+    }
+
+    //method
+    void CanUseSeniorCitizenDiscount(){
+        if(Age>=60){
+            isSenior=true;
+        } else {
+            isSenior=false;
+        }
+    }
+
+    void CanDo(){
+        System.out.println("The Senior Person can use a 20% discount.");
+
+    }
+
+}
