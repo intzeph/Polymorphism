@@ -1,0 +1,32 @@
+public class L8 {
+    public static void main(String[] args) {
+
+        AdultPerson AP= new AdultPerson("Zephaniah Lumandas", "Domanpot, Asingan", "Male", 20, "09082676220");
+
+        SeniorPerson SR= new SeniorPerson("Rodrigo Aquino", "Domanpot", "Male", 70, "09163894756");
+
+        EmployedPerson EP= new EmployedPerson("Martin Luther", "Asingan", "Male", 29, "09088967204", "2022-2023", "IT Dept", "Dept Head", "₱ 50,000", "9.0");
+
+        Toddler T= new Toddler("Riley Reid", "Macalong, Asingan", "Female", 20, "09164567293", "2nd year College", "20211111");
+
+
+        AP.Info();
+        AP.CanDo();
+        System.out.println();
+
+        SR.Info();
+        SR.CanDo();
+        System.out.println();
+
+
+        EP.Info();
+        EP.IsResting();
+        EP.CanDo();
+        System.out.println();
+
+        T.Info();
+        T.IsAtHome();
+        T.CanDo();
+
+    }
+}
